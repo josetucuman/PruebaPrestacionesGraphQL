@@ -1,0 +1,16 @@
+type Nomeclador {
+	codigo: ID!
+	descripcion: String!
+}
+
+extend type Query{
+	traerNomencladores: [Nomenclador]!
+	nomenclador(codigo: ID!): Nomenclador
+	countNomenclador: Long!
+}
+
+extend type Mutation {
+	crearNomenclador(codigo: ID!, descripcion: String!): Nomenclador!
+	updateNomenclador(codigo: ID!, descripcion: String!): Nomenclador!
+	deleteNomenclador(codigo: ID!): Boolean
+}
