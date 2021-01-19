@@ -1,0 +1,14 @@
+type Prestacion {
+	id: Long!
+	codigo: String!
+	descripcion: String!
+	capitulo: Int
+	subcapitulo: Int
+}
+
+type Query {
+	traerPrestaciones: [Prestacion]!
+	traerPrestacion(id: Long!):Prestacion
+	countPrestacion: Long!
+}
+

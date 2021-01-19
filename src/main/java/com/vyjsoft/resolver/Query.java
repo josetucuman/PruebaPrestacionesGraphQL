@@ -31,6 +31,10 @@ public class Query implements GraphQLQueryResolver {
 		return prestacionRepository.findAll();
 	}
 	
+	public Prestacion traerPrestacion(Long id) {
+		return prestacionRepository.findById(id).orElse(null);
+	}
+	
 	/**
 	 * 
 	 * @return

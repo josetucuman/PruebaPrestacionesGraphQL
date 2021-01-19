@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 
 @Entity
-@Table(name = "REINTEGROS.PRESTACIONES")
+@Table(name = "PRESTACIONES")
 public class Prestacion {
 
 	@Id
